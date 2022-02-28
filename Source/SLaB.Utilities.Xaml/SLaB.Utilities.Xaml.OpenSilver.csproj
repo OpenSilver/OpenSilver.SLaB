@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <AssemblyName>SLaB.Utilities.Xaml</AssemblyName>
+    <PackageId>OpenSilver.$(AssemblyName)</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Collections\*.cs" />
+    <Compile Include="Converters\BoolConverter.cs" />
+    <Compile Include="Converters\CollectionConverter.cs" />
+    <Compile Include="Converters\ComposableConverter.cs" />
+    <Compile Include="Converters\ComposeConverter.cs" />
+    <Compile Include="Converters\EvenOddConverter.cs" />
+    <Compile Include="Converters\SwitchConverter.cs" />
+    <Compile Include="Converters\WrappingConverter.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleWrapper.cs" />
+    <Compile Include="TryImportResourceDictionary.cs" />
+    <Compile Include="XamlDependencyAttribute.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs" Link="SharedAssemblyInfo.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="1.0.0-private-2022-02-08" />
+  </ItemGroup>
+  
+</Project>
