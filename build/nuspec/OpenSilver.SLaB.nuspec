@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$PackageId$</id>
+    <version>$PackageVersion$</version>
+    <title>SLab for OpenSilver</title>
+    <authors>Userware</authors>
+    <description>SLab for Silverlight compiled with OpenSilver</description>
+    <projectUrl>https://www.opensilver.net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright (c) 2020, Userware. All rights reserved.</copyright>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="OpenSilver" version="1.0.0-private-2022-02-08" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="../../Source/SLaB.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Utilities.dll" target="lib/netstandard2.0/SLaB.Utilities.dll" />
+    <file src="../../Source/SLaB.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Utilities.pdb" target="lib/netstandard2.0/SLaB.Utilities.pdb" />
+    <file src="../../Source/SLaB.Utilities.Xaml/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.dll" target="lib/netstandard2.0/SLaB.Utilities.Xaml.dll" />
+    <file src="../../Source/SLaB.Utilities.Xaml/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.pdb" target="lib/netstandard2.0/SLaB.Utilities.Xaml.pdb" />    
+    <file src="../../Source/SLaB.Utilities.Xap/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xap.dll" target="lib/netstandard2.0/SLaB.Utilities.Xap.dll" />
+    <file src="../../Source/SLaB.Utilities.Xap/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xap.pdb" target="lib/netstandard2.0/SLaB.Utilities.Xap.pdb" />
+    <file src="../../Source/SLaB.Navigation.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.Utilities.dll" target="lib/netstandard2.0/SLaB.Navigation.Utilities.dll" />
+    <file src="../../Source/SLaB.Navigation.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.Utilities.pdb" target="lib/netstandard2.0/SLaB.Navigation.Utilities.pdb" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.dll" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.pdb" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Error/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Error.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Error.dll" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Error/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Error.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Error.pdb" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.PageResource/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.PageResource.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.PageResource.dll" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.PageResource/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.PageResource.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.PageResource.pdb" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Xap/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Xap.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Xap.dll" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Xap/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Xap.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Xap.pdb" />
+  </files>
+</package>

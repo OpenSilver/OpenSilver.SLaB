@@ -4,8 +4,6 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <EnableDefaultItems>false</EnableDefaultItems>
     <AssemblyName>SLaB.Navigation.ContentLoaders.Xap</AssemblyName>
-    <PackageId>OpenSilver.$(AssemblyName)</PackageId>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

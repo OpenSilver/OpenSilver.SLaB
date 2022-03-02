@@ -4,9 +4,6 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <EnableDefaultItems>false</EnableDefaultItems>
     <AssemblyName>SLaB.Navigation.Utilities</AssemblyName>
-    <PackageId>OpenSilver.$(AssemblyName)</PackageId>
-    <PackageVersion>1.0.0-private-2022-02-08</PackageVersion>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
