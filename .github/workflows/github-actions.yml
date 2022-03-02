@@ -31,8 +31,8 @@ jobs:
       - name: Pack SLab
         working-directory: build
         run: |
-          mkdir temp; echo "OpenSilver.SLaB 1.0.0-rc-${{ steps.version.outputs.suffix }}" > temp/Version.txt
-          nuget pack nuspec\OpenSilver.SLaB.nuspec -OutputDirectory "output/OpenSilver.SLaB" -Properties "PackageId=OpenSilver.SLaB;PackageVersion=1.0.0-rc-${{ steps.version.outputs.suffix }};Configuration=Release;Target=OpenSilver.SLaB;RepositoryUrl=https://github.com/${{ env.GITHUB_REPOSITORY_OWNER_PART }}/${{ env.GITHUB_REPOSITORY_NAME_PART }}"
+          mkdir temp; echo "OpenSilver.SLaB 1.0.0-private-${{ steps.version.outputs.suffix }}" > temp/Version.txt
+          nuget pack nuspec\OpenSilver.SLaB.nuspec -OutputDirectory "output/OpenSilver.SLaB" -Properties "PackageId=OpenSilver.SLaB;PackageVersion=1.0.0-private-${{ steps.version.outputs.suffix }};Configuration=Release;Target=OpenSilver.SLaB;RepositoryUrl=https://github.com/${{ env.GITHUB_REPOSITORY_OWNER_PART }}/${{ env.GITHUB_REPOSITORY_NAME_PART }}"
       - uses: actions/upload-artifact@v2
         with:
           name: OpenSilver.SLaB
