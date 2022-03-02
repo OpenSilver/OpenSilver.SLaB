@@ -24,7 +24,7 @@ jobs:
           nuget restore Source/OpenSilver.SLaB.sln -v quiet
       - name: Build SLab
         working-directory: build
-        run: msbuild slnf/OpenSilver.SLaB.slnf -p:Configuration=SL -clp:ErrorsOnly -restore
+        run: msbuild slnf/OpenSilver.SLaB.slnf -p:Configuration=Release -clp:ErrorsOnly -restore
       - name: Format Package Version
         id: version
         run: echo "::set-output name=suffix::$(date +'%Y-%m-%d-%H%M%S')-${{ env.GITHUB_SHA_SHORT }}"
