@@ -21,7 +21,7 @@ jobs:
           ref: ${{ github.ref }}
       - name: Restore Packages
         run: |
-          nuget restore Source/OpenSilver.SLaB.sln -v quiet
+          dotnet nuget restore Source/OpenSilver.SLaB.sln -v quiet
       - name: Build SLab
         working-directory: build
         run: msbuild slnf/OpenSilver.SLaB.slnf -p:Configuration=Release -clp:ErrorsOnly -restore
@@ -32,7 +32,7 @@ jobs:
         working-directory: build
         run: |
           mkdir temp; echo "OpenSilver.SLaB 1.0.0-private-${{ steps.version.outputs.suffix }}" > temp/Version.txt
-          nuget.exe pack nuspec\OpenSilver.SLaB.nuspec -OutputDirectory "output/OpenSilver.SLaB" -Properties "PackageId=OpenSilver.SLaB;PackageVersion=1.0.0-private-${{ steps.version.outputs.suffix }};Configuration=Release;Target=OpenSilver.SLaB;RepositoryUrl=https://github.com/${{ env.GITHUB_REPOSITORY_OWNER_PART }}/${{ env.GITHUB_REPOSITORY_NAME_PART }}"
+          dotnet nuget pack nuspec\OpenSilver.SLaB.nuspec -OutputDirectory "output/OpenSilver.SLaB" -Properties "PackageId=OpenSilver.SLaB;PackageVersion=1.0.0-private-${{ steps.version.outputs.suffix }};Configuration=Release;Target=OpenSilver.SLaB;RepositoryUrl=https://github.com/${{ env.GITHUB_REPOSITORY_OWNER_PART }}/${{ env.GITHUB_REPOSITORY_NAME_PART }}"
       - uses: actions/upload-artifact@v2
         with:
           name: OpenSilver.SLaB
@@ -42,4 +42,4 @@ jobs:
       #      dotnet nuget push "build\output\OpenSilver.SLaB\*.nupkg" -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/${{ env.GITHUB_REPOSITORY_OWNER_PART }}/index.json
       - name: Upload packages to MyGet
         run: |
-           dotnet nuget push "build\output\OpenSilver.SLaB\*.nupkg" -k ${{ secrets.MYGET_TOKEN }} -s https://www.myget.org/F/kcl-os-slab/api/v2/package    
+           dotnet nuget push "build\output\OpenSilver.SLaB\*.nupkg" -k ${{ secrets.MYGET_TOKEN }} -s ${{ secrets.MyGET_FEED_URL }}
