@@ -6,7 +6,7 @@
     <title>SLab for OpenSilver</title>
     <authors>Userware</authors>
     <description>SLab for Silverlight compiled with OpenSilver</description>
-    <projectUrl>https://www.opensilver.net</projectUrl>
+    <projectUrl>https://github.com/OpenSilver/OpenSilver.SLaB</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>Copyright (c) 2020, Userware. All rights reserved.</copyright>
     <dependencies>
