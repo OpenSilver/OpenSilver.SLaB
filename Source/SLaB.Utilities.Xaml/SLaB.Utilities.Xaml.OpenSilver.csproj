@@ -4,8 +4,6 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <EnableDefaultItems>false</EnableDefaultItems>
     <AssemblyName>SLaB.Utilities.Xaml</AssemblyName>
-    <PackageId>OpenSilver.$(AssemblyName)</PackageId>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,7 +27,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="1.0.0-private-2022-02-08" />
+    <PackageReference Include="OpenSilver" Version="1.0.0-private-2022-03-01-100352-a5e386dd" />
   </ItemGroup>
   
 </Project>

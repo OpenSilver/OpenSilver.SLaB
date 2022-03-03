@@ -1,0 +1,15 @@
+{
+  "solution": {
+    "path": "..\\..\\Source\\OpenSilver.SLab.sln",
+    "projects": [
+      "SLaB.Utilities\\SLaB.Utilities.OpenSilver.csproj",
+      "SLaB.Utilities.Xaml\\SLaB.Utilities.Xaml.OpenSilver.csproj",
+      "SLaB.Utilities.Xap\\SLaB.Utilities.Xap.OpenSilver.csproj",
+      "SLaB.Navigation.Utilities\\SLaB.Navigation.Utilities.OpenSilver.csproj",
+      "SLaB.Navigation.ContentLoaders.Utilities\\SLaB.Navigation.ContentLoaders.Utilities.OpenSilver.csproj",
+      "SLaB.Navigation.ContentLoaders.Error\\SLaB.Navigation.ContentLoaders.Error.OpenSilver.csproj",      
+      "SLaB.Navigation.ContentLoaders.PageResource\\SLaB.Navigation.ContentLoaders.PageResource.OpenSilver.csproj",  
+      "SLaB.Navigation.ContentLoaders.Xap\\SLaB.Navigation.ContentLoaders.Xap.OpenSilver.csproj"
+	]
+  }
+}
