@@ -1,0 +1,101 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <AssemblyName>ScratchContent</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.OpenSilver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.OpenSilver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\AuthContentLoader.cs" />
+    <Compile Include="Navigation\InitContentLoader.cs" />
+    <Compile Include="Navigation\INonLinearNavigationActivePages.cs" />
+    <Compile Include="Navigation\NavigateKey.cs" />
+    <Compile Include="Navigation\NonLinearNavigationActivePages.cs" />
+    <Compile Include="Navigation\NonLinearNavigationContentLoader.cs" />
+    <Compile Include="Views\About.xaml.cs" />
+    <Compile Include="Views\BrokenPage.xaml.cs" />
+    <Compile Include="Views\ErrorPage.xaml.cs">
+      <DependentUpon>ErrorPage.OpenSilver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorWindow.xaml.cs" />
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.OpenSilver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ObservableDictionaryDemo.xaml.cs" />
+    <Compile Include="Views\SitemapPage.xaml.cs">
+      <DependentUpon>SitemapPage.OpenSilver.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Assets\Sitemaps.OpenSilver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <ApplicationDefinition Include="App.OpenSilver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.OpenSilver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources.OpenSilver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BrokenPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ErrorPage.OpenSilver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ErrorWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home.OpenSilver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ObservableDictionaryDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SitemapPage.OpenSilver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\home.png" />
+    <Resource Include="Assets\noConnect.png" />
+    <Resource Include="Assets\SLaB Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SLaB.Navigation.ContentLoaders.Error\SLaB.Navigation.ContentLoaders.Error.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Navigation.ContentLoaders.PageResource\SLaB.Navigation.ContentLoaders.PageResource.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Navigation.ContentLoaders.Utilities\SLaB.Navigation.ContentLoaders.Utilities.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Navigation.ContentLoaders.Xap\SLaB.Navigation.ContentLoaders.Xap.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Navigation.Utilities\SLaB.Navigation.Utilities.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Utilities.Xaml\SLaB.Utilities.Xaml.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Utilities.Xap\SLaB.Utilities.Xap.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Utilities\SLaB.Utilities.OpenSilver.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="1.0.0-private-2022-02-08" />
+  </ItemGroup>
+  
+</Project>

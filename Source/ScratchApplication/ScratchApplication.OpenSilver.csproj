@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <AssemblyName>ScratchApplication</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="1.0.0-private-2022-02-08" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="App.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="largeIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScratchContent\ScratchContent.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Utilities.Xap\SLaB.Utilities.Xap.OpenSilver.csproj" />
+    <ProjectReference Include="..\SLaB.Utilities\SLaB.Utilities.OpenSilver.csproj" />
+  </ItemGroup>
+  
+</Project>
