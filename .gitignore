@@ -363,3 +363,11 @@ MigrationBackup/
 FodyWeavers.xsd
 
 build/temp
+
+# OpenSilver
+/Source/ScratchApplication.Browser/wwwroot/**/*
+!/Source/ScratchApplication.Browser/wwwroot/BlazorLoader.js
+!/Source/ScratchApplication.Browser/wwwroot/favicon.ico
+!/Source/ScratchApplication.Browser/wwwroot/index.html
+!/Source/ScratchApplication.Browser/wwwroot/loading-indicator.css
+!/Source/ScratchApplication.Browser/wwwroot/loading-indicator.js
