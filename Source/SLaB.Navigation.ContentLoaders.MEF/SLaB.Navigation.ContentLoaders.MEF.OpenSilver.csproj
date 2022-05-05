@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SLaB.Navigation.ContentLoaders.MEF</RootNamespace>
+    <AssemblyName>SLaB.Navigation.ContentLoaders.MEF</AssemblyName>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DefineSilverlight>true</DefineSilverlight>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="1.0.0-private-2022-03-04-161437-15eec675" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SLaB.Navigation.ContentLoaders.Utilities\SLaB.Navigation.ContentLoaders.Utilities.OpenSilver.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ExportPageAttribute.cs" />
+    <Compile Include="IExportPageMetadata.cs" />
+    <Compile Include="MEFContentLoader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+</Project>
