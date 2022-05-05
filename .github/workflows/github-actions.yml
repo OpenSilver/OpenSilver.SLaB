@@ -21,7 +21,7 @@ jobs:
           ref: ${{ github.ref }}
       - name: Restore Packages
         run: |
-          nuget restore Source/OpenSilver.SLaB.sln -v quiet
+          nuget restore Source/SLaB.OpenSilver.sln -v quiet
       - name: Build SLab
         working-directory: build
         run: msbuild slnf/OpenSilver.SLaB.slnf -p:Configuration=Release -clp:ErrorsOnly -restore
