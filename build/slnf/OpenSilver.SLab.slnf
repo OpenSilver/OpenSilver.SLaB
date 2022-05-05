@@ -1,15 +1,24 @@
 {
   "solution": {
-    "path": "..\\..\\Source\\OpenSilver.SLab.sln",
+    "path": "..\\..\\Source\\SLab.OpenSilver.sln",
     "projects": [
+      "SLaB.Controls.Remote\\SLaB.Controls.Remote.OpenSilver.csproj",
+      "SLaB.Printing.Controls\\SLaB.Printing.Controls.OpenSilver.csproj",
       "SLaB.Utilities\\SLaB.Utilities.OpenSilver.csproj",
+      "SLaB.Utilities.ChangeLinq\\SLaB.Utilities.ChangeLinq.OpenSilver.csproj",
       "SLaB.Utilities.Xaml\\SLaB.Utilities.Xaml.OpenSilver.csproj",
+      "SLaB.Utilities.Xaml.Serializer\\SLaB.Utilities.Xaml.Serializer.OpenSilver.csproj",
+      "SLaB.Utilities.Xaml.Serializer.UI\\SLaB.Utilities.Xaml.Serializer.UI.OpenSilver.csproj",
       "SLaB.Utilities.Xap\\SLaB.Utilities.Xap.OpenSilver.csproj",
-      "SLaB.Navigation.Utilities\\SLaB.Navigation.Utilities.OpenSilver.csproj",
+      "SLaB.Navigation.ContentLoaders.Auth\\SLaB.Navigation.ContentLoaders.Auth.OpenSilver.csproj",
+      "SLaB.Navigation.ContentLoaders.Error\\SLaB.Navigation.ContentLoaders.Error.OpenSilver.csproj",
+      "SLaB.Navigation.ContentLoaders.MEF\\SLaB.Navigation.ContentLoaders.MEF.OpenSilver.csproj",
+      "SLaB.Navigation.ContentLoaders\\SLaB.Navigation.ContentLoaders.OpenSilver.csproj",
+      "SLaB.Navigation.ContentLoaders.PageResource\\SLaB.Navigation.ContentLoaders.PageResource.OpenSilver.csproj",
       "SLaB.Navigation.ContentLoaders.Utilities\\SLaB.Navigation.ContentLoaders.Utilities.OpenSilver.csproj",
-      "SLaB.Navigation.ContentLoaders.Error\\SLaB.Navigation.ContentLoaders.Error.OpenSilver.csproj",      
-      "SLaB.Navigation.ContentLoaders.PageResource\\SLaB.Navigation.ContentLoaders.PageResource.OpenSilver.csproj",  
-      "SLaB.Navigation.ContentLoaders.Xap\\SLaB.Navigation.ContentLoaders.Xap.OpenSilver.csproj"
-	]
+      "SLaB.Navigation.ContentLoaders.Xap\\SLaB.Navigation.ContentLoaders.Xap.OpenSilver.csproj",
+      "SLaB.Navigation.Controls\\SLaB.Navigation.Controls.OpenSilver.csproj",
+      "SLaB.Navigation.Utilities\\SLaB.Navigation.Utilities.OpenSilver.csproj"
+    ]
   }
 }

@@ -11,26 +11,44 @@
     <copyright>Copyright (c) 2020, Userware. All rights reserved.</copyright>
     <dependencies>
       <group targetFramework="netstandard2.0">
-        <dependency id="OpenSilver" version="1.0.0-private-2022-03-01-100352-a5e386dd" />
+        <dependency id="OpenSilver" version="1.0.0-private-2022-05-05-210354-9d86277b" />
       </group>
     </dependencies>
   </metadata>
   <files>
+    <file src="../../Source/SLaB.Controls.Remote/bin/$Configuration$/netstandard2.0/SLaB.Controls.Remote.dll" target="lib/netstandard2.0/SLaB.Controls.Remote.dll" />
+    <file src="../../Source/SLaB.Controls.Remote/bin/$Configuration$/netstandard2.0/SLaB.Controls.Remote.pdb" target="lib/netstandard2.0/SLaB.Controls.Remote.pdb" />
+    <file src="../../Source/SLaB.Printing.Controls/bin/$Configuration$/netstandard2.0/SLaB.Printing.Controls.dll" target="lib/netstandard2.0/SLaB.Printing.Controls.dll" />
+    <file src="../../Source/SLaB.Printing.Controls/bin/$Configuration$/netstandard2.0/SLaB.Printing.Controls.pdb" target="lib/netstandard2.0/SLaB.Printing.Controls.pdb" />	
     <file src="../../Source/SLaB.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Utilities.dll" target="lib/netstandard2.0/SLaB.Utilities.dll" />
     <file src="../../Source/SLaB.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Utilities.pdb" target="lib/netstandard2.0/SLaB.Utilities.pdb" />
+    <file src="../../Source/SLaB.Utilities.ChangeLinq/bin/$Configuration$/netstandard2.0/SLaB.Utilities.ChangeLinq.dll" target="lib/netstandard2.0/SLaB.Utilities.ChangeLinq.dll" />
+    <file src="../../Source/SLaB.Utilities.ChangeLinq/bin/$Configuration$/netstandard2.0/SLaB.Utilities.ChangeLinq.pdb" target="lib/netstandard2.0/SLaB.Utilities.ChangeLinq.pdb" />
     <file src="../../Source/SLaB.Utilities.Xaml/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.dll" target="lib/netstandard2.0/SLaB.Utilities.Xaml.dll" />
-    <file src="../../Source/SLaB.Utilities.Xaml/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.pdb" target="lib/netstandard2.0/SLaB.Utilities.Xaml.pdb" />    
+    <file src="../../Source/SLaB.Utilities.Xaml/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.pdb" target="lib/netstandard2.0/SLaB.Utilities.Xaml.pdb" />
+    <file src="../../Source/SLaB.Utilities.Xaml.Serializer/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.Serializer.dll" target="lib/netstandard2.0/SLaB.Utilities.Xaml.Serializer.dll" />
+    <file src="../../Source/SLaB.Utilities.Xaml.Serializer/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.Serializer.pdb" target="lib/netstandard2.0/SLaB.Utilities.Xaml.Serializer.pdb" />
+    <file src="../../Source/SLaB.Utilities.Xaml.Serializer.UI/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.Serializer.UI.dll" target="lib/netstandard2.0/SLaB.Utilities.Xaml.Serializer.UI.dll" />
+    <file src="../../Source/SLaB.Utilities.Xaml.Serializer.UI/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xaml.Serializer.UI.pdb" target="lib/netstandard2.0/SLaB.Utilities.Xaml.Serializer.UI.pdb" />	
     <file src="../../Source/SLaB.Utilities.Xap/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xap.dll" target="lib/netstandard2.0/SLaB.Utilities.Xap.dll" />
     <file src="../../Source/SLaB.Utilities.Xap/bin/$Configuration$/netstandard2.0/SLaB.Utilities.Xap.pdb" target="lib/netstandard2.0/SLaB.Utilities.Xap.pdb" />
-    <file src="../../Source/SLaB.Navigation.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.Utilities.dll" target="lib/netstandard2.0/SLaB.Navigation.Utilities.dll" />
-    <file src="../../Source/SLaB.Navigation.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.Utilities.pdb" target="lib/netstandard2.0/SLaB.Navigation.Utilities.pdb" />
-    <file src="../../Source/SLaB.Navigation.ContentLoaders.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.dll" />
-    <file src="../../Source/SLaB.Navigation.ContentLoaders.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.pdb" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Auth/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Auth.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Auth.dll" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Auth/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Auth.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Auth.pdb" />
     <file src="../../Source/SLaB.Navigation.ContentLoaders.Error/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Error.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Error.dll" />
     <file src="../../Source/SLaB.Navigation.ContentLoaders.Error/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Error.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Error.pdb" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.MEF/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.MEF.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.MEF.dll" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.MEF/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.MEF.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.MEF.pdb" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.dll" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.pdb" />
     <file src="../../Source/SLaB.Navigation.ContentLoaders.PageResource/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.PageResource.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.PageResource.dll" />
     <file src="../../Source/SLaB.Navigation.ContentLoaders.PageResource/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.PageResource.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.PageResource.pdb" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.dll" />
+    <file src="../../Source/SLaB.Navigation.ContentLoaders.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Utilities.pdb" />
     <file src="../../Source/SLaB.Navigation.ContentLoaders.Xap/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Xap.dll" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Xap.dll" />
     <file src="../../Source/SLaB.Navigation.ContentLoaders.Xap/bin/$Configuration$/netstandard2.0/SLaB.Navigation.ContentLoaders.Xap.pdb" target="lib/netstandard2.0/SLaB.Navigation.ContentLoaders.Xap.pdb" />
+    <file src="../../Source/SLaB.Navigation.Controls/bin/$Configuration$/netstandard2.0/SLaB.Navigation.Controls.dll" target="lib/netstandard2.0/SLaB.Navigation.Controls.dll" />
+    <file src="../../Source/SLaB.Navigation.Controls/bin/$Configuration$/netstandard2.0/SLaB.Navigation.Controls.pdb" target="lib/netstandard2.0/SLaB.Navigation.Controls.pdb" />
+    <file src="../../Source/SLaB.Navigation.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.Utilities.dll" target="lib/netstandard2.0/SLaB.Navigation.Utilities.dll" />
+    <file src="../../Source/SLaB.Navigation.Utilities/bin/$Configuration$/netstandard2.0/SLaB.Navigation.Utilities.pdb" target="lib/netstandard2.0/SLaB.Navigation.Utilities.pdb" />
   </files>
 </package>
