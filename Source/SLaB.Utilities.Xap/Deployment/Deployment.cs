@@ -26,7 +26,6 @@ namespace SLaB.Utilities.Xap.Deployment
         public static readonly DependencyProperty EntryPointTypeProperty =
             DependencyProperty.Register("EntryPointType", typeof(string), typeof(Deployment), new PropertyMetadata(""));
 
-#if !OPENSILVER
         /// <summary>
         ///   Gets or sets a value that indicates the level of access that cross-domain callers have to the Silverlight-based application in this deployment.
         /// </summary>
@@ -44,7 +43,6 @@ namespace SLaB.Utilities.Xap.Deployment
                                         typeof(ExternalPartCollection),
                                         typeof(Deployment),
                                         new PropertyMetadata(null));
-#endif
 
         /// <summary>
         ///   Gets or sets an object that contains information about the application that is used for out-of-browser support.
@@ -75,9 +73,7 @@ namespace SLaB.Utilities.Xap.Deployment
         /// </summary>
         public Deployment()
         {
-#if !OPENSILVER
             this.ExternalParts = new ExternalPartCollection();
-#endif
             this.Parts = new AssemblyPartCollection();
         }
 
@@ -99,7 +95,6 @@ namespace SLaB.Utilities.Xap.Deployment
             set { this.SetValue(EntryPointTypeProperty, value); }
         }
 
-#if !OPENSILVER
         /// <summary>
         ///   Gets or sets a value that indicates the level of access that cross-domain callers have to the Silverlight-based application in this deployment.
         /// </summary>
@@ -117,7 +112,6 @@ namespace SLaB.Utilities.Xap.Deployment
             get { return (ExternalPartCollection)this.GetValue(ExternalPartsProperty); }
             set { this.SetValue(ExternalPartsProperty, value); }
         }
-#endif
 
         /// <summary>
         ///   Gets or sets an object that contains information about the application that is used for out-of-browser support.

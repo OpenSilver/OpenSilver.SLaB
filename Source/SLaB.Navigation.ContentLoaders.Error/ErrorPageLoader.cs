@@ -55,11 +55,7 @@ namespace SLaB.Navigation.ContentLoaders.Error
         /// </summary>
         public ErrorPageLoader()
         {
-#if OPENSILVER
-            this.ErrorPages = new DependencyObjectCollection<ErrorPage>();
-#else
             this.ErrorPages = new DependencyObjectCollection<IErrorPage>();
-#endif
         }
 
 
@@ -87,13 +83,7 @@ namespace SLaB.Navigation.ContentLoaders.Error
         /// <summary>
         ///   The set of IErrorPages that will be used to determine what Uri to load when an error is encountered.
         /// </summary>
-#if OPENSILVER
-        public DependencyObjectCollection<ErrorPage> ErrorPages { get; private set; }
-#else
         public DependencyObjectCollection<IErrorPage> ErrorPages { get; private set; }
-#endif
-
-
 
         /// <summary>
         ///   Gets the attached "Error" property, set when an ErrorPageLoader loads a page for an error.

@@ -11,7 +11,6 @@ namespace SLaB.Utilities.Xap.Deployment
     /// </summary>
     public class SecuritySettings : DependencyObject
     {
-#if !OPENSILVER
         /// <summary>
         ///   Gets or sets a value that indicates whether the out-of-browser application requires elevated permissions.
         /// </summary>
@@ -30,6 +29,5 @@ namespace SLaB.Utilities.Xap.Deployment
             get { return (ElevatedPermissions)this.GetValue(ElevatedPermissionsProperty); }
             set { this.SetValue(ElevatedPermissionsProperty, value); }
         }
-#endif
     }
 }

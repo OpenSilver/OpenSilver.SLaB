@@ -58,7 +58,6 @@ namespace SLaB.Utilities.Xap.Deployment
                                         typeof(WindowSettings),
                                         new PropertyMetadata(default(double)));
 
-#if !OPENSILVER
         /// <summary>
         ///   Gets or sets a value that indicates how the out-of-browser application window is positioned at startup.
         /// </summary>
@@ -67,7 +66,6 @@ namespace SLaB.Utilities.Xap.Deployment
                                         typeof(WindowStartupLocation),
                                         typeof(WindowSettings),
                                         new PropertyMetadata(default(WindowStartupLocation)));
-#endif
 
         /// <summary>
         ///   Gets or sets a value that indicates the appearance of the title bar and border for the out-of-browser application window.
@@ -125,7 +123,6 @@ namespace SLaB.Utilities.Xap.Deployment
             set { this.SetValue(WidthProperty, value); }
         }
 
-#if !OPENSILVER
         /// <summary>
         ///   Gets or sets a value that indicates how the out-of-browser application window is positioned at startup.
         /// </summary>
@@ -134,7 +131,6 @@ namespace SLaB.Utilities.Xap.Deployment
             get { return (WindowStartupLocation)this.GetValue(WindowStartupLocationProperty); }
             set { this.SetValue(WindowStartupLocationProperty, value); }
         }
-#endif
 
         /// <summary>
         ///   Gets or sets a value that indicates the appearance of the title bar and border for the out-of-browser application window.
