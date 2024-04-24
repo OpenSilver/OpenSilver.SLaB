@@ -1,11 +1,17 @@
-name: SLab Build
+name: OpenSilver.SLab Build
+
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+    inputs:
+        opensilver-version:
+            description: 'OpenSilver version'
+            required: true
+        version:
+            description: 'OpenSilver.SLaB package version'
+            required: true
+
 jobs:
   Build-Pack-Publish:
-    #We should not run these steps on the forks by default.
     if: github.repository_owner == 'OpenSilver'
     runs-on: windows-latest
     steps:
@@ -15,31 +21,12 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '7.0.x'
-      - name: Clone SLab repo
+      - name: Clone OpenSilver.SLab repo
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
-      - name: Restore Packages
-        run: |
-          nuget restore Source/SLaB.OpenSilver.sln -v quiet
-      - name: Build SLab
-        working-directory: build
-        run: msbuild slnf/OpenSilver.SLaB.slnf -p:Configuration=Release -clp:ErrorsOnly -restore
-      - name: Format Package Version
-        id: version
-        run: echo "::set-output name=suffix::$(date +'%Y-%m-%d-%H%M%S')-${{ env.GITHUB_SHA_SHORT }}"
-      - name: Pack SLab
-        working-directory: build
-        run: |
-          mkdir temp; echo "OpenSilver.SLaB 1.0.0-private-${{ steps.version.outputs.suffix }}" > temp/Version.txt
-          nuget pack nuspec\OpenSilver.SLaB.nuspec -OutputDirectory "output/OpenSilver.SLaB" -Properties "PackageId=OpenSilver.SLaB;PackageVersion=1.0.0-private-${{ steps.version.outputs.suffix }};Configuration=Release;Target=OpenSilver.SLaB;RepositoryUrl=https://github.com/${{ env.GITHUB_REPOSITORY_OWNER_PART }}/${{ env.GITHUB_REPOSITORY_NAME_PART }}"
-      - uses: actions/upload-artifact@v2
-        with:
-          name: OpenSilver.SLaB
-          path: "build/output/OpenSilver.SLaB"
-      # - name: Upload packages
-      #   run: |
-      #      dotnet nuget push "build\output\OpenSilver.SLaB\*.nupkg" -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/${{ env.GITHUB_REPOSITORY_OWNER_PART }}/index.json
+      - name: Build OpenSilver.SLab NuGet package
+        run: ./build/Build_NuGet.bat ${{ github.event.inputs.version }} ${{ github.event.inputs.opensilver-version }}
       - name: Upload packages to MyGet
         run: |
-           dotnet nuget push "build\output\OpenSilver.SLaB\*.nupkg" -k ${{ secrets.MYGET_TOKEN }} -s ${{ secrets.MyGET_FEED_URL }}
+           dotnet nuget push "build\output\*.nupkg" -k ${{ secrets.MYGET_TOKEN }} -s https://www.myget.org/F/opensilver/api/v2/package
