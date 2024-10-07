@@ -19,9 +19,9 @@ namespace ScratchContent.Views
             this.uriLink.NavigateUri = e.Uri;
         }
 
-        private void ButtonClick(object sender, RoutedEventArgs e)
+        private async void ButtonClick(object sender, RoutedEventArgs e)
         {
-            Clipboard.SetText(ErrorPageLoader.GetError(this).ToString());
+            await Clipboard.SetTextAsync(ErrorPageLoader.GetError(this).ToString());
         }
     }
 }

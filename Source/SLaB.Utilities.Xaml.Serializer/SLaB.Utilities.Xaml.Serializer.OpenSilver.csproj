@@ -7,11 +7,8 @@
     <EnableDefaultItems>false</EnableDefaultItems>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <DefineSilverlight>true</DefineSilverlight>
+    <UseOpenSilver>true</UseOpenSilver>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="2.2.0" />
-  </ItemGroup>
 
   <ItemGroup>
     <Compile Include="..\SharedAssemblyInfo.cs">

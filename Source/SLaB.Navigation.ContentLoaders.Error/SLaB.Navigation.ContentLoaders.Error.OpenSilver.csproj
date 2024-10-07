@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <EnableDefaultItems>false</EnableDefaultItems>
     <AssemblyName>SLaB.Navigation.ContentLoaders.Error</AssemblyName>
+    <UseOpenSilver>true</UseOpenSilver>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,13 +15,9 @@
     <Compile Include="..\SharedAssemblyInfo.cs" Link="SharedAssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
- 
-  <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="2.2.0" />
-  </ItemGroup>
- 
+
   <ItemGroup>
     <ProjectReference Include="..\SLaB.Navigation.ContentLoaders.Utilities\SLaB.Navigation.ContentLoaders.Utilities.OpenSilver.csproj" />
   </ItemGroup>
-  
+
 </Project>

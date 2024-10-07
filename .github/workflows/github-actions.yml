@@ -1,4 +1,4 @@
-name: OpenSilver.SLab Build
+name: OpenSilver.SLaB Build
 
 on:
   workflow_dispatch:
@@ -20,12 +20,12 @@ jobs:
         uses: rlespinasse/github-slug-action@v3.x
       - uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '7.0.x'
-      - name: Clone OpenSilver.SLab repo
+          dotnet-version: '8.0.x'
+      - name: Clone OpenSilver.SLaB repo
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
-      - name: Build OpenSilver.SLab NuGet package
+      - name: Build OpenSilver.SLaB NuGet package
         run: ./build/Build_NuGet.bat ${{ github.event.inputs.version }} ${{ github.event.inputs.opensilver-version }}
       - name: Upload packages to MyGet
         run: |

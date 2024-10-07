@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <EnableDefaultItems>false</EnableDefaultItems>
     <AssemblyName>SLaB.Utilities</AssemblyName>
+    <UseOpenSilver>true</UseOpenSilver>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,8 +23,4 @@
     <Compile Include="..\SharedAssemblyInfo.cs" Link="SharedAssemblyInfo.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="2.2.0" />
-  </ItemGroup>
-  
 </Project>

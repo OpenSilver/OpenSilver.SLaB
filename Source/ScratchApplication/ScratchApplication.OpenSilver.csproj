@@ -4,14 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <EnableDefaultItems>false</EnableDefaultItems>
     <AssemblyName>ScratchApplication</AssemblyName>
+    <UseOpenSilver>true</UseOpenSilver>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-	<ApplicationDefinition Include="App.xaml">
+    <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
   </ItemGroup>
@@ -31,5 +28,5 @@
     <ProjectReference Include="..\SLaB.Utilities.Xap\SLaB.Utilities.Xap.OpenSilver.csproj" />
     <ProjectReference Include="..\SLaB.Utilities\SLaB.Utilities.OpenSilver.csproj" />
   </ItemGroup>
-  
+
 </Project>
