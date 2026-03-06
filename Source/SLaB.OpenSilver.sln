@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32113.165
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11520.95 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLaB.Utilities.OpenSilver", "SLaB.Utilities\SLaB.Utilities.OpenSilver.csproj", "{C1D33C35-4B22-46CE-B4DB-5E13B4D1E445}"
 EndProject
@@ -35,9 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLaB.Utilities.Xaml.Seriali
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{76D9EE86-5602-4C81-BBF1-19825DA13819}"
 	ProjectSection(SolutionItems) = preProject
+		..\build\Build_Nuget.bat = ..\build\Build_Nuget.bat
 		Directory.Build.targets = Directory.Build.targets
 		..\.github\workflows\github-actions.yml = ..\.github\workflows\github-actions.yml
 		NuGet.Config = NuGet.Config
+		..\build\nuspec\OpenSilver.SLaB.nuspec = ..\build\nuspec\OpenSilver.SLaB.nuspec
 		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
 		SLaBKey.snk = SLaBKey.snk
 	EndProjectSection

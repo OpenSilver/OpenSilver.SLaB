@@ -2,11 +2,11 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net472</TargetFramework>
+		<TargetFramework>net10.0-windows</TargetFramework>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="OpenSilver.Simulator" Version="2.2.0-preview-2024-04-23-164624-af8784ba" />
+		<PackageReference Include="OpenSilver.Simulator" Version="[$(OpenSilverVersion)]" />
 	</ItemGroup>
 
 	<ItemGroup>

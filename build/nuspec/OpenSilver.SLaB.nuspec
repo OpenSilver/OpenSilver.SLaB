@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/OpenSilver/OpenSilver.SLaB</projectUrl>
     <repository type="git" url="https://github.com/OpenSilver/OpenSilver.SLaB" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright (c) 2024, Userware. All rights reserved.</copyright>
+    <copyright>Copyright (c) 2026, Userware. All rights reserved.</copyright>
     <dependencies>
       <group targetFramework="netstandard2.0">
         <dependency id="OpenSilver" version="$OpenSilverDependencyVersion$" />

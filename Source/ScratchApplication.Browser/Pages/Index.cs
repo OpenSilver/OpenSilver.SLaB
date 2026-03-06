@@ -1,10 +1,10 @@
-﻿using DotNetForHtml5;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
-using Microsoft.JSInterop;
-using ScratchApplication.Browser.Interop;
+using OpenSilver.WebAssembly;
+using System.Threading.Tasks;
 
 namespace ScratchApplication.Browser.Pages;
+
 [Route("/")]
 public class Index : ComponentBase
 {
@@ -12,13 +12,9 @@ public class Index : ComponentBase
     {
     }
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        base.OnInitialized();
-        Cshtml5Initializer.Initialize(new UnmarshalledJavaScriptExecutionHandler(JSRuntime));
-        Program.RunApplication();
+        await base.OnInitializedAsync();
+        await Runner.RunApplicationAsync<ScratchContent.App>();
     }
-
-    [Inject]
-    private IJSRuntime JSRuntime { get; set; }
 }
